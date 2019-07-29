@@ -1,0 +1,46 @@
+Environment
+-----------
+a)JDK 1.7 
+b)Tomcat 8.0 
+c)Spring Tool Suite 3.0 used For IDE
+d) JAX-RS Restful with Jersey 
+	javax.ws.rs.Client
+	
+1) Download the application
+2) Unzip and import application into STS IDE
+3) Right Click on Project and select Run as --> Run on Server --> Select Tomcat 8.0 --> Finish
+4) Options Will be disply on Console
+
+		(or)
+
+ 1) Right Click on Project and Export to War
+ 2) Deploye into Tomcat 8.0
+ 3) open browser start application http://localhost:8080/webJersey/
+ 3) Console will disply options
+ 
+
+Client  
+-------------------
+a) Main method is created to take the inputs for Create,Get,Get All,Update,Fulfill
+b) By Using RS Client sending the request to service
+
+Service  
+-----------
+The Below methods are created to fulfill the requirement	
+
+a) Created a static map to store the values
+	java.util.HashMap
+	java.util.Map
+	
+b) The Below Classes Used for Get request and send responce back to client
+	javax.ws.rs.GET;
+	javax.ws.rs.Path;
+	javax.ws.rs.PathParam;
+	javax.ws.rs.Produces;
+	javax.ws.rs.core.MediaType;
+	
+1)createOrder - To create Order
+2)getOrderDetails - To view Single Order Status
+3)getAllOrderDetails _ To View All Orders List
+4)updateOrder - To Update Order
+5)issueOrder - To Fulfill Order
